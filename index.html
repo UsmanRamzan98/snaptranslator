@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="app-icon.png">
+<title>Snap Translator</title>
+<meta name="description" content="Snap Translator translates text, voice and photos in 100+ languages, with a translator keyboard for every app.">
+<style>
+  :root { color-scheme: light dark; --fg: #1b1a17; --muted: #5f5a50; --bg: #f7f5ff; --card: #ffffff; --accent: #5b3fd1; --line: #e4def7; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f1ece1; --muted: #a9a294; --bg: #000000; --card: #15130f; --accent: #e0b44a; --line: #2e2a23; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; display: flex; flex-direction: column; gap: 28px; }
+  header { display: flex; gap: 18px; align-items: center; }
+  header img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+  h1 { font-size: 2rem; line-height: 1.1; margin: 0; }
+  .tag { color: var(--muted); margin: 4px 0 0; }
+  .features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  @media (max-width: 560px) { .features { grid-template-columns: minmax(0, 1fr); } }
+  .feature { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+  .feature h2 { font-size: 1rem; margin: 0 0 4px; color: var(--accent); }
+  .feature p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a { text-decoration: none; font-weight: 600; color: var(--accent); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 9px 16px; }
+  .links a:hover, .links a:focus-visible { border-color: var(--accent); outline: none; }
+  footer { color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--line); padding-top: 16px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="app-icon.png" alt="Snap Translator app icon">
+    <div>
+      <h1>Snap Translator</h1>
+      <p class="tag">Translate text, voice and photos in 100+ languages. Coming soon to the App Store for iPhone.</p>
+    </div>
+  </header>
+
+  <section class="features" aria-label="Features">
+    <div class="feature"><h2>Text</h2><p>Type or paste and get a translation in Standard or AI quality.</p></div>
+    <div class="feature"><h2>Voice</h2><p>Speak and translate, or hold a two-way conversation.</p></div>
+    <div class="feature"><h2>Camera</h2><p>Point at a sign or menu. Text is read on your iPhone and translated.</p></div>
+    <div class="feature"><h2>Keyboard</h2><p>Translate as you type in any app with the Snap Translator keyboard.</p></div>
+    <div class="feature"><h2>Offline</h2><p>Download languages and translate without internet.</p></div>
+    <div class="feature"><h2>Private</h2><p>No account, no ads and no tracking. Your history stays on your iPhone.</p></div>
+  </section>
+
+  <nav class="links" aria-label="Pages">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+  </nav>
+
+  <footer>
+    <p>Questions? Email <a href="mailto:mian.usman98@ymail.com">mian.usman98@ymail.com</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
